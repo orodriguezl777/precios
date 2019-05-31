@@ -25,9 +25,9 @@ $(document).ready(function(){
   var $textUsers3 = $textUsers1;
   var $textLimit = "ilimitado";
   var $title1 = "<h4>Gratis hasta "+ $textUsers1 + " usuarios</h4>";
-  var $title2 = "<h5>Pago</h5>";
-  var $subtitle2 = "<h5>Usuarios</h5>";
-  var $title3 = "<h5>Pago único</h5>";
+  var $title2 = "<h5 style=\'display:inline-block;\'>Pago</h5>";
+  var $subtitle2 = "<h5 style=\'display:inline-block;\'>Usuarios</h5>";
+  var $title3 = "<h5 style=\'display:inline-block;\'>Pago único</h5>";
   var $textli1 = "<li>Usuarios ilimitados.</li>";
   var $textli20 = "<li>Hasta 5 usuarios activos.</li>";
   var $textli21 = "<li>Hasta "+ $textUsers2 +" usuarios activos.</li>";
@@ -52,11 +52,11 @@ $(document).ready(function(){
           $textPeriode1 = " cada dos años";
         }
 
-        $total2 = Math.round($price1 * parseInt(form1.users1.value), 0);
-        $total3 = Math.round(($price2/10) * parseInt(form2.users2.value), 0);
+        $total2 = Math.round($price1 * parseInt(form2.users1.value), 0);
+        $total3 = Math.round(($price2/10) * parseInt(form3.users2.value), 0);
 
-        $textli21 = "<li>Hasta "+ form1.users1.value.bold() +" usuarios activos.</li>";
-        $textli22 = "<li>Hasta "+ form2.users2.value.bold() +" usuarios activos.</li>";
+        $textli21 = "<li>Hasta "+ form2.users1.value.bold() +" usuarios activos.</li>";
+        $textli22 = "<li>Hasta "+ form3.users2.value.bold() +" usuarios activos.</li>";
 
         $("#textPrice2").replaceWith("<ul>" + $textli1 + $textli21 + $textli3 + $textli5 + "</ul>");
         $("#textPrice3").replaceWith("<ul>" + $textli1 + $textli22 + $textli3 + $textli5 + "</ul>");

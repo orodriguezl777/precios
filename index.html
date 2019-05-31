@@ -53,28 +53,34 @@
         <div class="box6">
 
           <div class="box61">
-            <form id="form1" name="form1" action="" method="post">
-              <p id="title2"></p>
-              <select id="periode1" class="px-2" name="periode1">
-                <script type="text/javascript">
-                  document.write("<option>Mensual</option>")
-                  document.write("<option>Anual</option>")
-                  document.write("<option>Bianual</option>")
-                </script>
-              </select>
-              <p id="subtitle2"></p>
-              <select id="users1" class="px-4" name="users1">
-                <script type="text/javascript">
-                  for(x=10; x<110; x=x+10){
-                    document.write("<option>" + x + "</option>")
-                  }
-                </script>
-              </select>
-            </form>
+            <div class="form-group">
+              <label style="display:inline-block;" id="title2"></label>
+              <form style="display:inline-block;" id="form1" name="form1" action="" method="post">
+                <select id="periode1" class="px-2" name="periode1">
+                  <script type="text/javascript">
+                    document.write("<option>Mensual</option>")
+                    document.write("<option>Anual</option>")
+                    document.write("<option>Bianual</option>")
+                  </script>
+                </select>
+              </form>
+            </div>
+            <div class="form-group">
+              <label style="display:inline-block;"  id="subtitle2"></label>
+              <form style="display:inline-block;" id="form2" name="form2" action="" method="post">
+                <select id="users1" class="px-4" name="users1">
+                  <script type="text/javascript">
+                    for(x=10; x<110; x=x+10){
+                      document.write("<option>" + x + "</option>")
+                    }
+                  </script>
+                </select>
+              </form>
+            </div>
           </div>
 
           <div class="box62">
-            <p id="textPrice2"></p>
+            <p id="textPrice2" name="textPrice2"></p>
           </div>
 
           <div class="box63">
@@ -89,21 +95,25 @@
         <div class="box7">
 
           <div class="box71">
-            <form id="form2" name="form2" action="" method="post">
-              <p id="title3"></p>
-              <p id="subtitle3"></p>
-              <select id="users2" class="px-4" name="users2">
-                <script type="text/javascript">
-                  for(x=10; x<110; x=x+10){
-                    document.write("<option>" + x + "</option>")
-                  }
-                </script>
-              </select>
-            </form>
+            <div class="form-group">
+              <label id="title3"></label>
+            </div>  
+            <div class="form-group">
+              <label style="display:inline-block;" id="subtitle3"></label>
+              <form style="display:inline-block;" id="form3" name="form3" action="" method="post">
+                <select id="users2" class="px-4" name="users2">
+                  <script type="text/javascript">
+                    for(x=10; x<110; x=x+10){
+                      document.write("<option>" + x + "</option>")
+                    }
+                  </script>
+                </select>
+              </form>
+            </div>
           </div>
 
           <div class="box72">
-            <p id="textPrice3"></p>
+            <p id="textPrice3" name="textPrice3"></p>
           </div>
 
           <div class="box73">
