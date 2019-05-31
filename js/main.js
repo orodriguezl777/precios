@@ -53,7 +53,7 @@ $(document).ready(function(){
         }
 
         $total2 = Math.round($price1 * parseInt(form1.users1.value), 0);
-        $total3 = Math.round($price2 * parseInt(form2.users2.value), 0);
+        $total3 = Math.round(($price2/10) * parseInt(form2.users2.value), 0);
 
         $textli21 = "<li>Hasta "+ form1.users1.value.bold() +" usuarios activos.</li>";
         $textli22 = "<li>Hasta "+ form2.users2.value.bold() +" usuarios activos.</li>";
@@ -63,11 +63,11 @@ $(document).ready(function(){
 
         $textTotal1 = $total1.toString();
         $textTotal2 = $formatter.format($total2).toString() + $textPeriode1;
-        $textTotal3 = $formatter.format($total3).toString();
+        $textTotal3 = $formatter.format($total3).toString() + $textPeriode2;
 
         $("#total1").text($textTotal1).css('font-weight','bold');
-        $("#total2").text($textTotal2).css('color','red').css('font-weight','bold');
-        $("#total3").text($textTotal3).css('color','red').css('font-weight','bold');
+        $("#total2").text($textTotal2).css('font-weight','bold');
+        $("#total3").text($textTotal3).css('font-weight','bold');
 
     }
 
