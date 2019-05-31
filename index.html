@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Menorca Zeros i Uns S.L. (Sistema)</title>
+    <link  rel = "icon"  href = "img/logo.png"  type = "image / x-icon" >
+
+    <!--- Bootstrap 4  -------------------------------------------------------------------------------->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--- Hoja de estilos  ---------------------------------------------------------------------------->
+    <link rel="stylesheet" href="css/main.css">
+    <!--- Scroll Reveal ------------------------------------------------------------------------------->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!--- FontAwesome --------------------------------------------------------------------------------->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <!-- Menú de navegación --------------------------------------------------------------------------->
+  <div class="home">
+    <div class="box1">
+      <img src="img/logo.png" style="width: 25%;">
+    </div>
+
+    <div class="box2">
+      <h1>Calculadora de precios</h1>
+    </div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+    <div class="bloc">
+      <div class="blocS">
+        <div class="box5">
+
+          <div class="box51">
+            <p id="title1" class="d-inline"></p>
+          </div>
+
+          <div class="box52">
+            <p id="textPrice1"></p>
+          </div>
+
+          <div class="box53">
+            <p>Precio: <a id="total1"></a></p>
+          </div>
+
+          <div class="box54">
+            <button id="button1" type="button" class="btn btn-outline-primary btn-lg px-5 mb-2"></button>
+          </div>
+        </div>
+
+        <div class="box6">
+
+          <div class="box61">
+            <form id="form1" name="form1" action="" method="post">
+              <p id="title2"></p>
+              <select id="periode1" class="px-2" name="periode1">
+                <script type="text/javascript">
+                  document.write("<option>Mensual</option>")
+                  document.write("<option>Anual</option>")
+                  document.write("<option>Bianual</option>")
+                </script>
+              </select>
+              <p id="subtitle2"></p>
+              <select id="users1" class="px-4" name="users1">
+                <script type="text/javascript">
+                  for(x=10; x<110; x=x+10){
+                    document.write("<option>" + x + "</option>")
+                  }
+                </script>
+              </select>
+            </form>
+          </div>
+
+          <div class="box62">
+            <p id="textPrice2" name="textPrice2">a</p>
+          </div>
+
+          <div class="box63">
+            <p>Precio: <a id="total2" name="total2"></a></p>
+          </div>
+
+          <div class="box64">
+            <button id="button2" type="button" class="btn btn-primary btn-lg px-5 mb-2"></button>
+          </div>
+        </div>
+
+        <div class="box7">
+
+          <div class="box71">
+            <form id="form2" name="form2" action="" method="post">
+              <p id="title3"></p>
+              <p id="subtitle3"></p>
+              <select id="users2" class="px-4" name="users2">
+                <script type="text/javascript">
+                  for(x=10; x<110; x=x+10){
+                    document.write("<option>" + x + "</option>")
+                  }
+                </script>
+              </select>
+            </form>
+          </div>
+
+          <div class="box72">
+            <p id="textPrice3" name="textPrice3"></p>
+          </div>
+
+          <div class="box73">
+            <p>Precio: <a id="total3" name="total3"></a><strong> pago único</strong></p>
+          </div>
+
+          <div class="box74">
+            <button id="button3" type="button" class="btn btn-primary btn-lg px-5 mb-2"></button>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="blocI">
+        <div class="box8">
+          <p id="textConditions"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="box9"></div>
+    <div class="box10"></div>
+    <div class="box11"><h5>Precios &copy; 2019</h5></div>
+    <div class="box12"></div>
+
+  </div>
+
+    <!--- Librerias  ---------------------------------------------------------------------------------->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+    <!--- Scripts de JavaScript  ---------------------------------------------------------------------->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scrollReveal.js"></script>
+
+</body>
+
+</html>
