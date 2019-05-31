@@ -24,6 +24,9 @@ $(document).ready(function(){
   var $textUsers2 = $textUsers1;
   var $textUsers3 = $textUsers1;
   var $textLimit = "ilimitado";
+  var $description1;
+  var $description2;
+  var $description3;
   var $title1 = "<h4>Gratis hasta "+ $textUsers1 + " usuarios</h4>";
   var $title2 = "<h5 style=\'display:inline-block;\'>Pago</h5>";
   var $subtitle2 = "<h5 style=\'display:inline-block;\'>Usuarios</h5>";
@@ -55,11 +58,14 @@ $(document).ready(function(){
         $total2 = Math.round($price1 * parseInt(form2.users1.value), 0);
         $total3 = Math.round(($price2/10) * parseInt(form3.users2.value), 0);
 
-        $textli21 = "<li>Hasta "+ form2.users1.value.bold() +" usuarios activos.</li>";
-        $textli22 = "<li>Hasta "+ form3.users2.value.bold() +" usuarios activos.</li>";
+        $textli21 = "<li>Hasta "+ form2.users1.value.toString().bold() +" usuarios activos.</li>";
+        $textli22 = "<li>Hasta "+ form3.users2.value.toString().bold() +" usuarios activos.</li>";
 
-        $("#textPrice2").replaceWith("<ul>" + $textli1 + $textli21 + $textli3 + $textli5 + "</ul>");
-        $("#textPrice3").replaceWith("<ul>" + $textli1 + $textli22 + $textli3 + $textli5 + "</ul>");
+        $description2 = "<ul>" + $textli1 + $textli21 + $textli3 + $textli5 + "</ul>";
+        $description3 = "<ul>" + $textli1 + $textli22 + $textli3 + $textli5 + "</ul>";
+
+        $("#description2").html($description2);
+        $("#description3").html($description3);
 
         $textTotal1 = $total1.toString();
         $textTotal2 = $formatter.format($total2).toString() + $textPeriode1;
@@ -81,14 +87,17 @@ $(document).ready(function(){
     $("#button2").text($textButton2);
     $("#button3").text($textButton3);
 
-    $("#title1").replaceWith($title1);
-    $("#title2").replaceWith($title2);
-    $("#subtitle2").replaceWith($subtitle2);
-    $("#title3").replaceWith($title3);
-    $("#subtitle3").replaceWith($subtitle2);
-    $("#textPrice1").replaceWith("<ul>" + $textli1 + $textli20 + $textli3 + $textli4 + "</ul>");
-    $("#textPrice2").replaceWith("<ul>" + $textli1 + $textli21 + $textli3 + $textli5 + "</ul>");
-    $("#textPrice3").replaceWith("<ul>" + $textli1 + $textli22 + $textli3 + $textli5 + "</ul>");
-    $("#textConditions").replaceWith($textCond);
+    $("#title1").html($title1);
+    $("#title2").html($title2);
+    $("#subtitle2").html($subtitle2);
+    $("#title3").html($title3);
+    $("#subtitle3").html($subtitle2);
+
+    $description1 = "<ul>" + $textli1 + $textli20 + $textli3 + $textli4 + "</ul>";
+
+    $("#description1").html($description1);
+    $("#description2").html($description2);
+    $("#description3").html($description3);
+    $("#textConditions").html($textCond);
 
 });
